@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button {
+        background-color: yellowgreen;
+    }
+</style>
+<body>
+<h2>Add Products</h2>
+<input type="text" id="input">
+<button onclick="add()">ADD</button>
+<p id="fix"></p>
+
+<table>
+    <tr>
+        <td>Products Name</td>
+        <td id="soluong"></td>
+    </tr>
+    <tbody id="list"></tbody>
+
+
+</table>
+
+
+<script>
+    let newProducts = []
+
+    function add() {
+        let name = document.getElementById('input').value;
+        newProducts.push(name);
+        disPlay();
+    }
+
+    function disPlay() {
+        let html = '';
+        for (let i = 0; i < newProducts.length; i++) {
+            html += `<tr>
+        <td>${newProducts[i]}</td>
+        <td><button onclick="edit(${i})">EDIT</button></td>
+        <td><button onclick="bo(${i})">DELETE</button></td>
+      </tr>
+      `;
+        }
+        document.getElementById('list').innerHTML = html;
+        document.getElementById('soluong').innerHTML = newProducts.length;
+        document.getElementById('input').value = '';
+    }
+
+    function bo(index) {
+        newProducts.splice(index, 1);
+        disPlay();
+    }
+
+    function edit(index) {
+
+        document.getElementById('fix').innerHTML = `
+<h3>Form Edit</h3>
+<input type="text" id="name-fix">
+<button onclick="change(${index})">Save</   button>
+`;
+      //  let name = newProducts[index];
+      //  document.getElementById('name-fix').value = name;
+
+    };
+
+
+    function change(index) {
+        let nameEdit = document.getElementById('name-fix').value;
+        newProducts[index] = nameEdit;
+        document.getElementById('name-fix').innerHTML = ``;
+        disPlay();
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        let meter = parseFloat(0.305 * foot)
+        return meter;
+    }
+
+    function meterToFoot(meter) {
+        let foot = parseFloat(3.279*meter)
+        return foot;
+    }
+    let foot = parseFloat(prompt("Enter foot:"));
+    let  meter = parseFloat(prompt("Enter meter:"));
+    let a = footToMeter(foot);
+    let b = meterToFoot(meter);
+    document.write(a + '<br>')
+    document.write(b + '<br>')
+</script>
+</body>
+</html>

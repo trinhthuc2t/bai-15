@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    /*
+        //  Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+
+        function square(a) {
+            a = a * a;
+            return a;
+        }
+
+        let a = parseInt(prompt("Entre number"));
+        b = square(a);
+        alert(` Bình phương của ${a} là: ${b}`);
+
+
+        //  Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.
+
+        function pSircle(r) {
+            let d = Math.PI * 2 * r;
+            return d;
+        }
+
+        function sCircle(r) {
+            let c = Math.PI * r * r;
+            return c;
+        }
+
+        let r = parseInt(prompt("Nhập bán kính:"))
+        alert(`Diện tích hình tròn bán kính ${r} là: ${sCircle(r)}`);
+        alert(` Chu vi hình tròn bán kính ${r} là: ${pSircle(r)}`);
+    */
+
+
+    //  Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+
+
+    /*  function giaiThua(a) {
+          let b = 1;
+          if (a > 0) {
+              for (let i = 1; i <= a; i++) {
+                  b = b * i;
+              }
+              return b;
+          } else {
+              return null
+          }
+      }
+
+
+      let a = prompt("Enter number: ")
+      console.log(giaiThua(a))
+  */
+
+
+
+
+    //  Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+    //Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+
+
+
+
+
+
+    //  Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+
+    /*function max(a,b,c) {
+            if (a>b) {
+                if (b>c){
+                    return b;
+                }else {
+                    if (c>a){
+                        return c;
+                    }else {
+                        return a;
+                    }
+                }
+            }else {
+                if (b>c){
+                    return b;
+                }else {
+                    return c;
+                }
+            }
+    }
+    let a =4,b=5,c=7;
+    console.log(max(a,b,c));*/
+
+
+
+    //  Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+    //  Nếu là nguyên dương trả về true, ngược lại trả về false.
+
+    /*function number(a){
+        let x = false
+        if(a>0){
+            x = true;
+        }
+       return x
+    }
+    let a = -5;
+    console.log(number(a));*/
+
+
+
+
+
+
+    //  Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    function change(a, b) {
+        let temp = a;
+        a = b;
+        b = temp;
+    }
+
+
+    let a = 8, b = 4;
+    console.log("Sau đổi a = " + a + " b = " + b);
+
+
+    //  Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+
+
+    /* function change(arr){
+         let arr2 =[];
+         for(let i= 0; i < arr.length; i++){
+             arr2.push(arr[arr.length-i-1]);
+         }
+         return arr2;
+     }
+     let arr = [5,3,9,11,14,1];
+     console.log(change(arr));
+ */
+
+    //  Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+    //  kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+
+
+</script>
+</body>
+</html>
